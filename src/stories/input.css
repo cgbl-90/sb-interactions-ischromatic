@@ -1,0 +1,13 @@
+input {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    border: 1px grey solid;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 11px 20px;
+}
+
+input:hover {
+    outline: 1px rgb(49, 247, 49) solid;
+}

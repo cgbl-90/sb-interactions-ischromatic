@@ -1,0 +1,15 @@
+import { Meta } from "@storybook/addon-docs";
+
+<Meta title="Interaction testing with isChromatic()" />
+
+# Problem
+
+When you run interaction testing at Storybook, Chromatic only snapshots one state of the test
+
+For example, let's say that the test has 5 steps.
+
+Chromatic will snapshot the latest state of the component
+
+# Solution
+
+Use isChromatic() function to stop the test at certain step
