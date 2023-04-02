@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=28bcdb31218b"
   },
   "keywords": [],
   "author": "",
@@ -28,5 +29,7 @@
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.3.0",
     "chromatic": "^6.17.2"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "sb-interactions-ischromatic@1.0.0"
 }

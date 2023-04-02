@@ -25,7 +25,7 @@ SnapshotStepTwo.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
   userEvent.type(await canvas.findByTestId("name"), "email@provider.com");
   userEvent.type(await canvas.findByTestId("pwd"), "a-random-password");
-  if (isChromatic()) {
+  if (!isChromatic()) {
     userEvent.click(canvas.getByRole("button"));
   }
 };
