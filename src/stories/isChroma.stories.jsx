@@ -24,7 +24,8 @@ SnapshotStepOne.args = {
 SnapshotStepOne.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
   userEvent.type(await canvas.findByTestId("name"), "email@provider.com");
-    if (!isChromatic()) {
+  await new Promise((resolve) => setTimeout(resolve, 3000));
+  if (!isChromatic()) {
     userEvent.type(await canvas.findByTestId("pwd"), "a-random-password");
     userEvent.click(canvas.getByRole("button"));
   }
